@@ -1,4 +1,4 @@
-module listsperpat
+module listSparepart
 
 go 1.24.1
 

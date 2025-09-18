@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"listsperpat/controllers"
+	"listSparepart/controllers"
 
 	"github.com/gin-gonic/gin"
 )
@@ -9,10 +9,10 @@ import (
 func Routes() *gin.Engine {
 	r := gin.Default()
 
-	r.GET("/sperpart", controllers.GetAllSperpart)
-	r.POST("/sperpart", controllers.CreateSperpart)
-	r.PUT("/sperpart/:id", controllers.UpdateSperpart)
-	r.DELETE("/sperpart/:id", controllers.DeleteSperpart)
+	r.GET("/sparepart", controllers.GetAllSparepart)
+	r.POST("/sparepart", controllers.CreateSparepart)
+	r.PUT("/sparepart/:id", controllers.UpdateSparepart)
+	r.DELETE("/sparepart/:id", controllers.DeleteSparepart)
 
 	return r
 }

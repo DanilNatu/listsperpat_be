@@ -1,12 +1,12 @@
 package models
 
-type Sperpat struct {
+type Sparepart struct {
 	ID     int    `json:"id" gorm:"primaryKey;autoIncrement"`
 	Jenis  string `json:"jenis"`
 	Jumlah int    `json:"jumlah"`
 	Harga  int    `json:"harga"`
 }
 
-func (Sperpat) TableName() string {
-	return "tb_sperpat"
+func (Sparepart) TableName() string {
+	return "tb_sparepart"
 }
