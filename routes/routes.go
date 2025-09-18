@@ -11,6 +11,7 @@ func Routes() *gin.Engine {
 
 	r.GET("/sperpart", controllers.GetAllSperpart)
 	r.POST("/sperpart", controllers.CreateSperpart)
+	r.PUT("/sperpart/:id", controllers.UpdateSperpart)
 
 	return r
 }
