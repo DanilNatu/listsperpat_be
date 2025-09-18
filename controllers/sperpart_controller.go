@@ -50,3 +50,11 @@ func UpdateSperpart(c *gin.Context) {
 
 	c.JSON(http.StatusOK, sperpart)
 }
+
+func DeleteSperpart(c *gin.Context) {
+	id := c.Param("id")
+	var sperpart models.Sperpat
+	config.DB.Delete(&sperpart, "id = ?", id)
+	
+	c.JSON(http.StatusOK, gin.H{"message": "Sperpart deleted successfully"})
+}
