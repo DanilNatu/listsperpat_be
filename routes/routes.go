@@ -10,6 +10,7 @@ func Routes() *gin.Engine {
 	r := gin.Default()
 
 	r.GET("/sperpart", controllers.GetAllSperpart)
+	r.POST("/sperpart", controllers.CreateSperpart)
 
 	return r
 }
